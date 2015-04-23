@@ -1,4 +1,8 @@
-* ``.pot`` file generated using ``pygettext``
+* ``.pot`` file generated using ``xgettext``. Example
+```
+mkdir po
+xgettext --language=Python --keyword=_ --output=po/test_i18n.pot `find test_i18n/*.py`
+```
 * modified CHARSET in ``.pot`` file to say ``utf-8``
 * copy ``.pot`` file to ``en.po``. made changes there. Used ``po-edit``
    * ``apt-get install po-edit``
